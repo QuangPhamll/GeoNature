@@ -7,10 +7,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { AccueilComponent } from './apps/accueil/accueil.component';
+import { ContactFauneComponent } from './apps/contact-faune/contact-faune.component';
+import { ContactFloreComponent } from './apps/contact-flore/contact-flore.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AccueilComponent,
+    ContactFauneComponent,
+    ContactFloreComponent
   ],
   imports: [
     BrowserModule,
