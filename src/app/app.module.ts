@@ -7,22 +7,26 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './routing/app-routing.module';
 import { AccueilComponent } from './apps/accueil/accueil.component';
 import { ContactFauneComponent } from './apps/contact-faune/contact-faune.component';
 import { ContactFloreComponent } from './apps/contact-flore/contact-flore.component';
+import { SidenavItemsComponent } from './components/sidenav-items/sidenav-items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
     ContactFauneComponent,
-    ContactFloreComponent
+    ContactFloreComponent,
+    SidenavItemsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
+    AppRoutingModule,
     MdIconModule,
     MdNativeDateModule
   ],

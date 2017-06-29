@@ -1,25 +1,26 @@
-<!--Wrap all in page without scroll bar-->
-<div fxLayout="wrap">  
+<!--Wrap all in page without scroll bar-->  
   <md-sidenav-container>
-
-    <!--Tool bar-->
-    <md-toolbar class="toolbar">
-      <button md-mini-fab (click)="sidenav.toggle()">
-        <md-icon class="icon-toolbar">apps</md-icon>
-      </button>
-    </md-toolbar>
-    <!--End tool bar-->
 
     <!--Side Bar-->
     <md-sidenav #sidenav mode="side" opened="true">
-      Drawer content
+      <app-sidenav-items></app-sidenav-items>
     </md-sidenav>
     <!--End Side Bar-->
 
-    <!--App content-->
-    <div class="app-content" fxLayout="row wrap">
+    <div fxLayout="column" fxLayoutAlign="start stretch">
+      <!--Tool bar-->
+      <md-toolbar class="toolbar">
+        <button md-mini-fab (click)="sidenav.toggle()">
+          <md-icon class="icon-toolbar">apps</md-icon>
+        </button>
+      </md-toolbar>
+      <!--End tool bar-->
+
+      <!--App content-->
+      <div class="app-content">
+        <router-outlet></router-outlet>
+      </div>
+      <!--End app content-->
     </div>
-    <!--End app content-->
 
   </md-sidenav-container>
-</div>
