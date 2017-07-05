@@ -14,7 +14,6 @@ export class AccueilComponent implements OnInit {
   constructor(@Inject(APP_CONFIG) private config: AppConfig) {
     this.appName =  config.appName;
     this.welcomeMessage = config.welcomeMessage;
-    console.log(this.welcomeMessage);
   }
 
   ngOnInit() {

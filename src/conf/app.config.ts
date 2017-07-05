@@ -1,7 +1,7 @@
 import { InjectionToken } from '@angular/core';
 // Although the ApplicationConfig interface plays no role in dependency injection, 
 // it supports typing of the configuration object within the class.
-export interface AppConfig {
+export class AppConfig {
   appName: string;
   apiEndpoint: string;
   welcomeMessage: string;
