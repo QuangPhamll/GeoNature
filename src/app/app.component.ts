@@ -1,4 +1,6 @@
 import { Component, NgModule } from '@angular/core';
+import { NavService } from './services/nav.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,10 @@ import { Component, NgModule } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'app';
+  public appName: string;
+  constructor(private _navService: NavService) {
+    _navService.gettingAppName.subscribe(ms => {
+      this.appName = ms;
+    })
+  }
 }

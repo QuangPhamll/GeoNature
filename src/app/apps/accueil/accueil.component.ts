@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {APP_CONFIG , CONFIG, AppConfig} from 'conf/app.config';
+import { NavService } from '../../services/nav.service';
 
 @Component({
   selector: 'app-accueil',
@@ -11,7 +12,8 @@ export class AccueilComponent implements OnInit {
   private appName: string;
   private welcomeMessage: string;
 
-  constructor(@Inject(APP_CONFIG) private config: AppConfig) {
+  constructor(@Inject(APP_CONFIG) private config: AppConfig, private _navService: NavService) {
+    _navService.setAppName('Accueil');
     this.appName =  config.appName;
     this.welcomeMessage = config.welcomeMessage;
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavService } from '../../services/nav.service';
+
 
 @Component({
   selector: 'app-contact-flore',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFloreComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _navService: NavService) {
+      _navService.setAppName('Contact Flore');
+
+  }
 
   ngOnInit() {
   }

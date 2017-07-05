@@ -8,12 +8,14 @@
     <!--End Side Bar-->
 
     <div fxLayout="column" class="app-content">
+      
       <!--Tool bar-->
       <div fxFlex="none">
         <md-toolbar class="toolbar">
           <button md-mini-fab (click)="sidenav.toggle()">
             <md-icon class="icon-toolbar">apps</md-icon>
           </button>
+          <h3>{{appName}}</h3>
         </md-toolbar>
       </div>
       <!--End tool bar-->
@@ -23,6 +25,7 @@
         <router-outlet></router-outlet>
       </div>
       <!--End app content-->
+
     </div>
 
   </md-sidenav-container>
