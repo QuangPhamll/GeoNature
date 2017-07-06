@@ -1,12 +1,13 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {APP_CONFIG , CONFIG, AppConfig} from 'conf/app.config';
 import { NavService } from '../../services/nav.service';
+import { CarouselConfig } from 'ngx-bootstrap/carousel';
 
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
   styleUrls: ['./accueil.component.scss'],
-  providers: [{ provide: APP_CONFIG, useValue: CONFIG }]
+  providers: [{ provide: APP_CONFIG, useValue: CONFIG }, {provide: CarouselConfig, useValue: {interval: 4000, noPause: true}}]
 })
 export class AccueilComponent implements OnInit {
   private appName: string;

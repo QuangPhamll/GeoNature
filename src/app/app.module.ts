@@ -5,6 +5,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule, MdIconModule, MdNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing/app-routing.module';
@@ -31,6 +33,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     FlexLayoutModule,
     AppRoutingModule,
     MdIconModule,
+    CarouselModule.forRoot(),
     MdNativeDateModule
   ],
   providers: [NavService],
