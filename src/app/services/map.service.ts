@@ -33,5 +33,4 @@ export class MapService {
         L.control.scale().addTo(map);
         this.map = map;
   }
-
 }
