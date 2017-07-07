@@ -1,6 +1,7 @@
 // Angular core
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from '@angular/http';
 
 // For Angular Dependencies
 import 'hammerjs';
@@ -11,7 +12,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 // Angular created component
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './routing/app-routing.module';
+import { AppRoutingModule } from './routing/app-routing.module'; // RoutingModule
 import { AccueilComponent } from './apps/accueil/accueil.component';
 import { ContactFauneComponent } from './apps/contact-faune/contact-faune.component';
 import { ContactFloreComponent } from './apps/contact-flore/contact-flore.component';
@@ -21,6 +22,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 // Service
 import { MapService } from './services/map.service';
 import { NavService } from './services/nav.service';
+import { MapComponent } from './components/map/map.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,10 +30,12 @@ import { NavService } from './services/nav.service';
     ContactFauneComponent,
     ContactFloreComponent,
     SidenavItemsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
