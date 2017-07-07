@@ -1,22 +1,26 @@
+// Angular core
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// For Angular Dependencies
+import 'hammerjs';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule, MdIconModule, MdNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import 'hammerjs';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
-
+// Angular created component
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { AccueilComponent } from './apps/accueil/accueil.component';
 import { ContactFauneComponent } from './apps/contact-faune/contact-faune.component';
 import { ContactFloreComponent } from './apps/contact-flore/contact-flore.component';
 import { SidenavItemsComponent } from './components/sidenav-items/sidenav-items.component';
-import { NavService } from './services/nav.service';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
+// Service
+import { MapService } from './services/map.service';
+import { NavService } from './services/nav.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +40,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     CarouselModule.forRoot(),
     MdNativeDateModule
   ],
-  providers: [NavService],
+  providers: [NavService, MapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
