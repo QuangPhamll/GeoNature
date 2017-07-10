@@ -109,49 +109,40 @@
         </div>
       </div>
     </md-card>
-  
   <!--end part 3-->
 
-  <!-- part 4  test-->
+  <!-- part 4  chartjs-->
   <div class="row">
-    <div class="col-md-3 col-sm-6 mdCard">
+    <div class="col-md-6 col-sm-12 mdCard">
       <md-card>
         <md-card-content>
-          <p>
-            {{ shortMessage }}
-          </p>
+          <chart [type]="type1" [data]="data" [options]="options"></chart>
         </md-card-content>
       </md-card>
     </div>
-    <div class="col-md-3 col-sm-6 mdCard">
+    <div class="col-md-6 col-sm-12 mdCard">
       <md-card>
         <md-card-content>
-          <p>
-            {{ shortMessage }}
-          </p>
+          <chart [type]="type2" [data]="data" [options]="options"></chart>
         </md-card-content>
       </md-card>
     </div>
-    <div class="col-md-3 col-sm-6 mdCard">
+    <div class="col-md-6 col-sm-12 mdCard">
       <md-card>
         <md-card-content>
-          <p>
-            {{ shortMessage }}
-          </p>
+          <chart [type]="type3" [data]="data" [options]="options"></chart>
         </md-card-content>
       </md-card>
     </div>
-    <div class="col-md-3 col-sm-6 mdCard">
+    <div class="col-md-6 col-sm-12 mdCard">
       <md-card>
         <md-card-content>
-          <p>
-            {{ shortMessage }}
-          </p>
+          <chart [type]="type4" [data]="data" [options]="options"></chart>
         </md-card-content>
       </md-card>
     </div>
   </div>
-  <!-- end part test -->
+  <!-- end part chartjs -->
 </div>
   
 

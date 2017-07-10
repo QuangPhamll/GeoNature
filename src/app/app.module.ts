@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule, MdIconModule, MdNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ChartModule } from 'angular2-chartjs';
 
 // Angular created component
 import { AppComponent } from './app.component';
@@ -42,7 +43,8 @@ import { MapComponent } from './components/map/map.component';
     AppRoutingModule,
     MdIconModule,
     CarouselModule.forRoot(),
-    MdNativeDateModule
+    MdNativeDateModule,
+    ChartModule
   ],
   providers: [NavService, MapService],
   bootstrap: [AppComponent]
