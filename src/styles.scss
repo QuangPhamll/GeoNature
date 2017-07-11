@@ -10,7 +10,10 @@ html, body, material-app, md-sidenav-container{
 
 .app-content {
     background-color: $solitude;
-    min-height: 100vh;
+    height: calc(100% - 64px);
+    overflow: auto;
+    padding: 10px;
+    // min-height: 100vh;
 }
 
 .padding-0 {
@@ -24,4 +27,12 @@ html, body, material-app, md-sidenav-container{
 .padding-md {
    padding: 5px !important;
    margin: 5px !important;
+}
+
+/*
+ * The /deep/ selector is simply to overcome view encapsulation
+ * and be able to select the div.md-sidenav-content generated at runtime
+*/
+md-sidenav-layout /deep/ .md-sidenav-content {
+  overflow: hidden;
 }

@@ -3,13 +3,9 @@
   <!--Bienvenue part-->
   <md-card class="mdCard">
     <md-card-header>
-      <div md-card-avatar></div>
-      <md-card-title> <h2> {{ 'MainTxt' | translate }} </h2> </md-card-title>
-      <!--<md-card-subtitle>Dog Breed</md-card-subtitle>-->
+      <md-card-title > <h2> {{ 'MainTxt' | translate }} </h2> </md-card-title>
     </md-card-header>
-    
     <div class="row">
-      
       <div class="col-md-7">
         <md-card-content>
             {{ 'demoLongMessage' | translate }} 
@@ -19,21 +15,21 @@
         <md-card-content>
         <carousel>
           <slide>
-            <img src="assets/images/nature/4.jpg" alt="First slide">
+            <img md-card-image src="assets/images/nature/4.jpg" alt="First slide">
             <div class="carousel-caption">
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </slide>
           <slide>
-            <img src="assets/images/nature/5.jpg" alt="Second slide">
+            <img md-card-image src="assets/images/nature/5.jpg" alt="Second slide">
             <div class="carousel-caption">
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </slide>
           <slide>
-            <img src="assets/images/nature/6.jpg" alt="Third slide">
+            <img md-card-image src="assets/images/nature/6.jpg" alt="Third slide">
             <div class="carousel-caption">
               <h3>Third slide label</h3>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
