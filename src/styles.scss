@@ -12,3 +12,16 @@ html, body, material-app, md-sidenav-container{
     background-color: $solitude;
     min-height: 100vh;
 }
+
+.padding-0 {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.padding-sm {
+   padding: 2px !important;
+   margin: 2px !important;
+}
+.padding-md {
+   padding: 5px !important;
+   margin: 5px !important;
+}
